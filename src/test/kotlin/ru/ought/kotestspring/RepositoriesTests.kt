@@ -16,7 +16,7 @@ class RepositoriesTests(
         val user = User("Ivan", "Petroff")
         entityManager.persist(user)
         entityManager.flush()
-//
+
         userRepository.findByFirstName("Ivan") shouldBe user
     }
 })
